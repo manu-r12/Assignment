@@ -1,0 +1,165 @@
+.barContainer{
+    color: black;
+    width: 100%;
+    background-color: white;
+    height: 318.33px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: 2px solid rgb(225, 224, 224);
+    box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+
+}
+
+
+.headTitle{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 21.94px;
+}
+
+.xaxisLine{
+    width: 80%;
+    height: 2px;
+    background-color: 
+    #EAEAEA;
+}
+
+.xaxisLineAndRange{
+    display: flex;
+    gap: 10px;
+    color: 
+    #858585;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+.barChart{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 20px;
+    position: relative;
+   
+
+}
+
+.barDiv{
+    position: absolute;
+    bottom: -12px;
+    left: 100px;
+    display: flex;
+    gap: 115px;
+}
+
+
+.bars{
+    display: flex;
+    position: absolute;
+    
+    bottom: 20px;
+    /* left: 100px; */
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.p{
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.dotUser{
+    background-color:
+    #9BDD7C;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dotGuest{
+    background-color:#E9A0A0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.legends{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.chartInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.datefromto{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #858585;
+}
+
+
+@media (max-width: 900px) {
+
+    .barContainer{
+        color: black;
+        width: 95%;
+        background-color: white;
+        height: 318.33px;
+        padding: 17px;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: 2px solid rgb(225, 224, 224);
+        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+    
+    }
+
+
+    .xaxisLine{
+        width: 80%;
+        height: 2px;
+        background-color: 
+        #EAEAEA;
+    }
+
+
+    .barDiv{
+        position: absolute;
+        bottom: -12px;
+        left: 100px;
+        display: flex;
+        gap: 75px;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .barDiv{
+        position: absolute;
+        bottom: -8px;
+        left: 80px;
+        display: flex;
+        gap: 75px;
+    }
+
+    .barContainer{
+       /* overflow-x: scroll; */
+    
+    }
+    .barChart{
+        overflow-x: scroll;
+        gap: 25px;
+    }
+
+   
+}

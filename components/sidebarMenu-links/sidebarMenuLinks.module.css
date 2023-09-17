@@ -1,0 +1,45 @@
+.linkName{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.94px;
+    text-decoration: none;
+    color: white;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 28px;
+}
+
+.linkBox{
+    display: flex;
+    gap: 13px;
+}
+/* 
+.linkBoxNotSelected{
+    font-family: 'Montserrat', sans-serif;
+   // font-weight: 100;
+    font-size: 18px;
+    line-height: 21.94px;
+} */
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 550px;
+}
+
+.footerlink{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 17.07px;
+    font-size: 14px;
+
+}

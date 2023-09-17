@@ -1,0 +1,98 @@
+.container{
+    color: black;
+    width: 420px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid rgb(225, 224, 224);
+    box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+    margin-top: 20px;
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    
+}
+
+
+.title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+    color: 
+    #858585;
+}
+
+.legendName{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17.7px;
+}
+
+.legendsDot{
+    width: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.legend{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.perc{
+    font-family: "Lato", sans-serif;
+    font-size: 10px;
+    line-height: 14.4px;
+    color:  #858585;
+}
+
+.nameAndPercValue{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.legendsDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 10px;
+   
+ 
+}
+
+.pieChart{
+    display: flex;
+    
+}
+
+@media (max-width: 900px) {
+
+    .title{
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+    }
+
+    .legendName{
+        font-size: 10px;
+        line-height: 13.7px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container{
+        width: 95%;
+    }
+}

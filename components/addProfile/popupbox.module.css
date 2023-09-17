@@ -1,0 +1,221 @@
+.mainContainer{
+    position: fixed;
+    z-index: 2;
+    width: 
+    544px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+
+.title{
+    font-family: "Figtree", sans-serif;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 600;
+    padding: 20px;justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+}
+
+.title2{
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header2{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.header2titles{
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border-bottom: 4px solid #3F84F8;
+    /* border-radius: 30px; */
+    cursor: pointer;
+}
+.header2titlesSelected{
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    border-bottom: 4px solid #D9D9D9;
+    cursor: pointer;
+}
+
+.inputLabel{
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.input{
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 12px 16px 12px 16px;
+    width: 496px;
+}
+.input::placeholder{
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    animation: slideIn .9s ease-in-out forwards;
+}
+
+.inputAndLabel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.nextButton{
+    background-color: #3E84F8;
+    width: 64px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 400px;
+    margin-top: 30px;
+}
+
+.nextButton2{
+    background-color: #3E84F8;
+    width: 64px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+.backButton2{
+   
+    width: 64px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid   #999CA0;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+.btns{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-left: 330px;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 510px) {
+    .mainContainer{
+        width: 444px;
+    }
+
+    .input{
+        width: 400px;
+    }
+
+    .nextButton{
+    margin-left: 300px;
+
+    }
+
+    .btns{
+    margin-left: 220px;
+
+    }
+}
+
+
+@media (max-width: 400px) {
+    .mainContainer{
+        width: 350px;
+    }
+
+    .input{
+        width: auto;
+    }
+
+    .nextButton{
+        margin: 0 0;
+
+
+    }
+
+    .btns{
+        margin: 0 auto;
+
+    }
+    .backButton2{
+   
+        width: 64px;
+        height: 40px;
+        border-radius: 8px;
+        border: 1px solid   #999CA0;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        font-family: "Figtree", sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    
+}
+
+
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+      opacity: 0; 
+    }
+    50%{
+        opacity: 0; 
+    }
+    70%{
+        opacity: 0; 
+    }
+    95%{
+        transform: translateX(2%);
+        opacity: 0.5; 
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+  }
+
+

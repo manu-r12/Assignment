@@ -1,0 +1,39 @@
+const { LocalAtmOutlined } = require("@mui/icons-material")
+
+const data = [
+    {
+        title: "Total Revenue",
+        Value:  "$2,222,43",
+        percantage: "+1.4%",
+        icons: "/icons/cash.svg",
+        bgColor: "#7FCD93"
+
+    },
+    {
+        title: "Total Transcations",
+        Value:  "1,453",
+        percantage: "+1.4%",
+        icons: "/icons/transcations.svg",
+        bgColor: "#DEBF85"
+
+
+    },
+    {
+        title: "Total Likes",
+        Value:  "13,333",
+        percantage: "+1.4%",
+        icons: "/icons/like.svg",
+        bgColor: "#ECA4A4"
+
+    },
+    {
+        title: "Total Users",
+        Value:  "9,873",
+        percantage: "+1.4%",
+        icons: "/icons/user.svg",
+        bgColor: "#A9B0E5"
+
+    }
+]
+
+module.exports = data

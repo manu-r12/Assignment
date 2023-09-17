@@ -1,0 +1,142 @@
+.container{
+    color: black;
+    width: 420px;
+    height: 200px;
+    background-color: white;
+    border: 2px solid rgb(225, 224, 224);
+    box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+    margin-top: 20px;
+    border-radius: 18px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.addBtn{
+    font-family: "Figtree", sans-serif;
+    color: 
+    #858585;
+    font-size: 16px;
+    line-height: 24px;
+}
+.addProflieBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.edit{
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all .3s;
+}
+.edit:hover{
+    font-size: 15px;
+
+}
+
+.plusIcon{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: #EBEBEB;
+    color: #858585;
+}
+
+.plusIcon:hover{
+    background-color: #f6f4f4;
+
+}
+
+.row{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.userName{
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.contactInfo{
+    font-family: "Figtree", sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.rowItems{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icons Color and Styles */
+
+.icon{
+   
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.userContactsInfo{
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 900px) {
+    .plusIcon{
+   
+        width: 40px;
+        height: 40px;
+        
+    
+    }
+
+    .addBtn{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+    .container{
+        width: 95%;
+    }
+
+
+    .contactInfo{
+        font-size: 12px;
+    }
+    .rowItems{
+        gap: 14px;
+    }
+
+    .userContactsInfo{
+        gap: 12px;
+    }
+}

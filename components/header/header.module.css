@@ -1,0 +1,98 @@
+.header{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+ 
+   
+    
+}
+
+.dashboardTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+}
+
+.searchBarItem{
+    outline: none;
+    border: none;
+    width: 80%;
+}
+
+.searchBarItem::placeholder{
+    font-family: "Lato", sans-serif;
+}
+
+.userInfoAndSearchBar{
+    color: gray;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 197.6px;
+    height:  32.93px;
+    padding: 0 9px;
+    border-radius: 10px;
+}
+.userImage{
+    border-radius: 50%;
+    background-position: center;
+}
+.leftSideOfHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.userEmail{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.signOut{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.signOut:hover{
+color: #4285F4;
+}
+
+.userMenu{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 220px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 18px;
+    left: 80px;
+    top: 40px;
+
+}
+
+@media (max-width: 440px) {
+
+    .header{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .dashboardTitle{
+       
+        font-size: 18px;
+        /* line-height: 20.26px; */
+    }
+    
+    .searchBarItem{
+        outline: none;
+        border: none;
+        width: 40%;
+    }
+
+}

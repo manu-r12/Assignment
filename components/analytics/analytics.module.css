@@ -1,0 +1,164 @@
+.mainContainer{
+    color: black;
+    margin-top: 15px;
+    width: 100%;
+;
+}
+
+.box{
+    display: flex;
+
+    padding: 20px;
+    width: 200.32px;
+    height: 120px;
+    background-color: white;
+    box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+    border: 2px solid rgb(225, 224, 224);
+    border-radius: 18px;
+    
+}
+
+.subContainer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 17px;
+   
+
+}
+
+.valuesFrame{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.title{
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+}
+.icon{
+    /* background-color: purple; */
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    
+}
+
+.totalDetailsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.value{
+    font-family: "Open Sans" ,sans-serif;
+    font-family: 700;
+    font-size: 19px;
+}
+
+.valuesFrame{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.percantage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 24px;
+    border-radius: 32px;
+    font-family: "Figtree", sans-serif;
+    font-size: 10px;
+    color:  #4AD15F;
+    background-color: 
+    #E9F9EB;
+}
+
+
+@media (max-width: 900px) {
+
+    .box{
+        padding: 20px;
+        width: 170.32px;
+        height: 120px;
+        background-color: white;
+        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+        border: 2px solid rgb(225, 224, 224);
+        border-radius: 18px;
+    }
+
+    .value{
+        font-family: "Open Sans" ,sans-serif;
+        font-family: 700;
+        font-size: 14px;
+    }
+    
+
+}
+
+
+@media (max-width: 640px) {
+
+
+    .subContainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+      
+    }
+
+   
+    .box{
+        padding: 15px;
+        width: 170.32px;
+        height: 120px;
+        background-color: white;
+        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+        border: 2px solid rgb(225, 224, 224);
+        border-radius: 18px;
+      
+    }
+
+    .valuesFrame{
+
+        gap: 20px;
+       
+    }
+
+    .value{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 440px) {
+
+
+    .subContainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        width: 100%;
+        margin-top: 10px;
+
+
+
+    }
+
+
+    .box{
+        padding: 15px;
+        width: 170.32px;
+        height: 130px;
+        background-color: white;
+        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+        border: 2px solid rgb(225, 224, 224);
+        border-radius: 18px;
+        margin-top: 13px;
+      
+    }
+
+
+
+}
