@@ -22,7 +22,7 @@ const Header = () => {
             <input className={styles.searchBarItem} type='text' placeholder='Search...'/>
             <Search/>
         </div>
-        <NotificationsNoneOutlined fontSize='large'/>
+        <NotificationsNoneOutlined fontSize='medium'/>
         { session ? <Image style={{cursor: "pointer"}} onClick={handleClick} className={styles.userImage} height={35} width={35} src={session.user.image}/> : <Person2Outlined/>}
        {userMenu && <div className={styles.userMenu}>
             <p className={styles.userEmail}>{session && session.user.email}</p>

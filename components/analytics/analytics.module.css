@@ -23,7 +23,7 @@
 
 .subContainer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     gap: 17px;
    
 
@@ -163,18 +163,16 @@
     .subContainer{
         display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+
         width: 100%;
         margin-top: 10px;
-
-
 
     }
 
 
     .box{
         padding: 15px;
-        width: 170.32px;
+        width: 175.32px;
         height: 130px;
         background-color: white;
         box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.05);

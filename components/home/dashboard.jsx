@@ -18,6 +18,7 @@ const Home = () => {
 
     const [isClient, setIsClient] = useState(false)
     const [menu, opneMenu] = useState(false)
+    const [isMobile , setIsMobile] = useState(false)
     const {value , dispatch} = useContext(UserContext)
 
 
@@ -53,6 +54,13 @@ const Home = () => {
                     opneMenu(false)
                     
                 }
+                if(windowDimensions.width < 440){
+                  setIsMobile(true)
+              
+              }else{
+                  setIsMobile(false)
+                  
+              }
                 return () => {
                   window.removeEventListener('resize', handleResize);
                 };
@@ -75,23 +83,20 @@ const Home = () => {
   return (
 
    
-      
+    <section>
+
+     
     <div className={styles.mainContianer} >
-                <div onClick={() => opneMenu(!menu)} className={styles.menuBar}><Menu fontSize='medium'/></div>
-            {menu && <div  onClick={() => opneMenu(false)} className={styles.dark}/>}
 
             {value.isPopUpOpen && <PopUpBox/> }
             {value.isPopUpOpen && <div onClick={handleClick} className={styles.dark}/>}
                 <div className={styles.dashboardContainer}>
-                    {/* <p  onClick={() => signOut()}>home, {session && session.user.email }</p> */}
                     <div className={styles.centerContainer}>
                             <div className={!menu ? `${styles.navigationSideBar}` : `${styles.navigationSideBarMedium}` }>
                                 <div className={styles.navigationSideBarItems}>
                                 <h1 className={styles.title1}>Board.</h1>  
                                 <div className={styles.navigationMenus}>
-                                    <div>
-                                        <SidebarMenuLinks/>
-                                    </div> 
+                                    <div><SidebarMenuLinks/></div> 
                                 </div>
                                 </div>
                                 
@@ -107,10 +112,40 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                    </div>
-                </div>
+                    </div> </div></div>
 
-            </div>
+       
+          <div className={styles.overviewMobileView}>
+          {menu && <div  onClick={() => opneMenu(false)} className={styles.dark}/>}
+          {value.isPopUpOpen && <PopUpBox/> }
+            {value.isPopUpOpen && <div onClick={handleClick} className={styles.dark}/>}
+          <div onClick={() => opneMenu(!menu)} className={styles.menuBar}><Menu fontSize='medium'/></div>
+          <div className={!menu ? `${styles.navigationSideBar}` : `${styles.navigationSideBarMedium}` }>
+                                <div className={styles.navigationSideBarItems}>
+                                <h1 className={styles.title1}>Board.</h1>  
+                                <div className={styles.navigationMenus}>
+                                    <div><SidebarMenuLinks/></div> 
+                                </div>
+                                </div>
+                                
+                            </div>
+
+                                <div className={styles.overviewInsideContaineroverviewMobileView}>
+                                    <Header/>
+                                    <Analytics/>
+                                    <BarChart/>
+                                    <div className={styles.bottomContaineroverviewMobileView}>
+                                        {isClient ? <TopProduct/> : <h1>Loading...</h1>}
+                                        <AddProfile/>
+                                    </div>
+                                </div>
+                            </div>
+        
+
+    </section> 
+    
+    
+    
    
    
   )

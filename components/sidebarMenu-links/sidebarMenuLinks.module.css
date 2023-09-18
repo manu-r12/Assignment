@@ -1,6 +1,6 @@
 .linkName{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 200;
     font-size: 18px;
     line-height: 21.94px;
     text-decoration: none;
@@ -18,13 +18,6 @@
     display: flex;
     gap: 13px;
 }
-/* 
-.linkBoxNotSelected{
-    font-family: 'Montserrat', sans-serif;
-   // font-weight: 100;
-    font-size: 18px;
-    line-height: 21.94px;
-} */
 
 .footerLinks{
     display: flex;
@@ -47,6 +40,16 @@
 
 @media (max-width: 440px) {
     .footerLinks{
-        top: 680px;
+        top: 480px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 38px;
+    }
+
+    .linkName{
+        font-weight: 400;
     }
 }

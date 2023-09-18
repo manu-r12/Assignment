@@ -82,7 +82,7 @@ border-radius: 50% 50% 0 0;
 
 .dark{
   position: fixed;
-  z-index: 4;
+  z-index: 2;
   width: 100%;
   height: 100%;
   top: 0;
@@ -158,6 +158,7 @@ border-radius: 50% 50% 0 0;
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   animation: slideIn .8s ease-in-out forwards;
 
@@ -165,6 +166,7 @@ border-radius: 50% 50% 0 0;
 @media (max-width: 1170px) {
   .navigationSideBar{
       display: none;
+      visibility: hidden;
       }
 
       .navigationSideBarMedium{
@@ -188,7 +190,7 @@ border-radius: 50% 50% 0 0;
           color: rgb(255, 255, 255);
           width: 44px;
           position: absolute;
-          left: 1%;
+          left: 3%;
           top: 1%;
           height: 44px;
           border-radius: 50%;
@@ -209,6 +211,11 @@ border-radius: 50% 50% 0 0;
 
   
 
+}
+.overviewMobileView{
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
 }
 
 
@@ -231,19 +238,28 @@ border-radius: 50% 50% 0 0;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
+
+  .mainContianer{
+    display: none;
+    visibility: hidden;
+  }
+  
 
   .overview{
       padding: 4px;
       height: 100vh;
+    
       margin-top: 20px;
   }
+
+  
 
   .bottomContainer{
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin-bottom: 40px;
+      /* margin-bottom: 40px; */
 
   }
 

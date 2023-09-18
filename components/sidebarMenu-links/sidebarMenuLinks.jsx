@@ -7,23 +7,23 @@ import Link from 'next/link'
     <div className={styles.container}>
         <div className={styles.linkBox}>
             <PieChartOutline fontSize='small'/>
-            <Link href={"#"} className={styles.linkName}>Dashboard</Link>
+            <Link href={"#"} style={{fontWeight: "700"}}  className={styles.linkName}>Dashboard</Link>
         </div>
         <div className={styles.linkBox}>
             <LocalOfferOutlined fontSize='small'/>
-            <Link href={"#"}  style={{fontWeight: "200"}} className={styles.linkName}>Transcations</Link>
+            <Link href={"#"}   className={styles.linkName}>Transcations</Link>
         </div>
         <div className={styles.linkBox}>
             <EventRepeatTwoTone fontSize='small'/>
-            <Link href={"#"}  style={{fontWeight: "200"}}  className={styles.linkName}>Schedules</Link>
+            <Link href={"#"}   className={styles.linkName}>Schedules</Link>
         </div>
         <div className={styles.linkBox}>
             <AccountCircleOutlined fontSize='small'/>
-            <Link href={"#"}  style={{fontWeight: "200"}}  className={styles.linkName}>Users</Link>
+            <Link href={"#"}   className={styles.linkName}>Users</Link>
         </div>
         <div className={styles.linkBox}>
             <SettingsOutlined fontSize='small'/>
-            <Link href={"#"}  style={{fontWeight: "200"}}  className={styles.linkName}>Settings</Link>
+            <Link href={"#"}   className={styles.linkName}>Settings</Link>
         </div>
         <div className={styles.footerLinks}>
             <Link className={styles.footerlink} href={"#"}>Help</Link>
