@@ -213,9 +213,8 @@ border-radius: 50% 50% 0 0;
 
 }
 .overviewMobileView{
+  display: none;
   padding: 10px;
-  margin-top: 20px;
-  color: white;
 }
 
 
@@ -243,6 +242,14 @@ border-radius: 50% 50% 0 0;
   .mainContianer{
     display: none;
     visibility: hidden;
+  }
+  
+  .overviewMobileView{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
   }
   
 
