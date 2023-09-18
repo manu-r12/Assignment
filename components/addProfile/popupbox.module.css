@@ -1,6 +1,6 @@
 .mainContainer{
     position: fixed;
-    z-index: 2;
+    z-index: 99;
     width: 
     544px;
     left: 50%;

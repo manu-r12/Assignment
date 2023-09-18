@@ -11,9 +11,9 @@
 .box{
     display: flex;
 
-    padding: 20px;
-    width: 200.32px;
-    height: 120px;
+    padding: 10px 20px;
+    width: 190.32px;
+    height: 100px;
     background-color: white;
     box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
     border: 2px solid rgb(225, 224, 224);
@@ -31,7 +31,7 @@
 
 .valuesFrame{
     display: flex;
-    gap: 50px;
+    /* gap: 50px; */
     align-items: center;
 }
 
@@ -50,19 +50,19 @@
 .totalDetailsBox{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .value{
     font-family: "Open Sans" ,sans-serif;
     font-family: 700;
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .valuesFrame{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .percantage{

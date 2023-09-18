@@ -74,7 +74,7 @@ const Home = () => {
 
   return (
 
-    <section>
+   
       
     <div className={styles.mainContianer} >
                 <div onClick={() => opneMenu(!menu)} className={styles.menuBar}><Menu fontSize='medium'/></div>
@@ -111,7 +111,7 @@ const Home = () => {
                 </div>
 
             </div>
-    </section>
+   
    
   )
 }

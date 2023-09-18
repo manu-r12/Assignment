@@ -9,7 +9,7 @@
 .subContainer1{
     color: white;
     width: 50%;
-    padding: 210px;
+    padding: 190px;
     background: linear-gradient(#4285F4 , #286DE0);
     webkit-clip-path: polygon(100% 0%, 95% 0%, 5% 100%, 0% 100%);
     clip-path:   polygon(0% 0%,
@@ -45,7 +45,7 @@
     position: absolute;
     width: 246px;
     height: 88px;
-    top:  404px;
+    top:  304px;
     left:  171px;
 }
 
@@ -155,7 +155,7 @@
 
 .socialLinks{
     position: absolute;
-    top: 709px;
+    top: 669px;
     width:  299px;
     height: 48px;
     left:  144.4px;

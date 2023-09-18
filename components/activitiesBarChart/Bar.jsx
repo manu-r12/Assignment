@@ -20,7 +20,7 @@ const Bar = ({heightforBar1, heightforBar2, width, bg1, bg2, weekNo}) => {
         <div className={styles.week}>
         <p style={{
                 fontFamily:"Lato",
-                fontSize: "7px",
+                fontSize: "10px",
                 textAlign: "center"
             }}>{weekNo}</p>
         </div>

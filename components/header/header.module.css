@@ -6,6 +6,7 @@
     width: 100%;
     animation: slideIn .8s ease-in-out forwards;
     position: relative;
+    z-index: 1;
     
 }
 
@@ -36,6 +37,7 @@
     height:  32.93px;
     padding: 0 9px;
     border-radius: 10px;
+    z-index: 1;
 }
 .userImage{
     border-radius: 50%;

@@ -25,7 +25,7 @@ const BarChart = () => {
             })}
              <p className={styles.xaxisLineAndRange}>0<span className={styles.xaxisLine}/></p>
              <div className={styles.barDiv}>
-                 <Bar heightforBar1={200} heightforBar2={120} width={38.41} bg1={"#98D89E"} bg2={"#EE8484"} weekNo={"Week 1"} />
+                 <Bar heightforBar1={150} heightforBar2={120} width={38.41} bg1={"#98D89E"} bg2={"#EE8484"} weekNo={"Week 1"} />
                  <Bar heightforBar1={120} heightforBar2={150} width={38.41} bg1={"#98D89E"} bg2={"#EE8484"} weekNo={"Week 2"} />
                  <Bar heightforBar1={40} heightforBar2={140} width={38.41} bg1={"#98D89E"} bg2={"#EE8484"} weekNo={"Week 3"} />
                  <Bar heightforBar1={160} heightforBar2={110} width={38.41} bg1={"#98D89E"} bg2={"#EE8484"} weekNo={"Week 4"} />

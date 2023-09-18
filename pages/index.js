@@ -41,6 +41,7 @@ export default function Index() {
       <main >
       {loading &&  <div className={styles.loading}><div className={styles.ldsheart}><div></div></div> </div>}
       { visible &&  <Home/>}
+    
       </main>
     </>
   )
