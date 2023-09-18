@@ -29,7 +29,7 @@ const PopUpBox = () => {
         details.basic = {name , email , phone}
 
         setDetials(details)
-        console.log(details)
+    
         setIsBasicSelected(false)
 
     }
@@ -41,8 +41,8 @@ const PopUpBox = () => {
         details.social = {igLink, ytLink}
         setDetials(details)
         dispatch(createAction(USER_ACTION_TYPES.ADD_NEW_PROFILE, details))
-        console.log(details)
-        console.log(value)
+      
+     
     }
     const handleclickforHeader = () =>{
         setIsBasicSelected(!isBasicSelected)
@@ -90,7 +90,7 @@ const PopUpBox = () => {
                 </div>
                 <div className={styles.btns}>
                 <button  onClick={() =>setIsBasicSelected(true)} className={styles.backButton2} type='submit'>Back</button>
-                <button onClick={() => console.log(details)} className={styles.nextButton2} type='submit'>Next</button>
+                <button className={styles.nextButton2} type='submit'>Next</button>
                 </div>
                 
             </form>

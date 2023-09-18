@@ -8,7 +8,7 @@
     margin-top: 25px;
     border: 2px solid rgb(225, 224, 224);
     box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
-
+    animation: slideIn .8s ease-in-out forwards;
 }
 
 
@@ -107,6 +107,28 @@
 }
 
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+      opacity: 0; 
+    }
+    50%{
+        opacity: 0; 
+    }
+    70%{
+        opacity: 0.2; 
+    }
+    95%{
+        
+        opacity: 0.9; 
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+  }
+
+
 @media (max-width: 900px) {
 
     .barContainer{
@@ -154,7 +176,7 @@
 
     .barContainer{
        /* overflow-x: scroll; */
-    
+       box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.05);
     }
     .barChart{
         overflow-x: scroll;

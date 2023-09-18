@@ -15,18 +15,15 @@ import { createAction } from '@/context/CreateAnAction';
 import WidgetsIcon from '@mui/icons-material/Widgets';
 import { Menu } from '@mui/icons-material';
 const Home = () => {
-    const router = useRouter()
-    const {data: session} = useSession()
+
     const [isClient, setIsClient] = useState(false)
     const [menu, opneMenu] = useState(false)
     const {value , dispatch} = useContext(UserContext)
-    console.log(value)
 
-        useEffect(() =>{
-            if(!session){
-                router.push("/")
-            }
-        }, [session])
+
+
+
+
 
         const [windowDimensions, setWindowDimensions] = useState({
             width: 0,
@@ -34,8 +31,7 @@ const Home = () => {
           });
         
       
-        
-       
+     
     
           useEffect(() => {
             if (typeof window !== 'undefined') {
@@ -52,7 +48,7 @@ const Home = () => {
           
                 if(windowDimensions.width < 1170){
                     opneMenu(false)
-                    console.log("yep")
+                
                 }else{
                     opneMenu(false)
                     
@@ -77,41 +73,46 @@ const Home = () => {
     }
 
   return (
+
+    <section>
+      
     <div className={styles.mainContianer} >
-        <div onClick={() => opneMenu(!menu)} className={styles.menuBar}><Menu fontSize='medium'/></div>
-       {menu && <div  onClick={() => opneMenu(false)} className={styles.dark}/>}
+                <div onClick={() => opneMenu(!menu)} className={styles.menuBar}><Menu fontSize='medium'/></div>
+            {menu && <div  onClick={() => opneMenu(false)} className={styles.dark}/>}
 
-       {value.isPopUpOpen && <PopUpBox/> }
-       {value.isPopUpOpen && <div onClick={handleClick} className={styles.dark}/>}
-        <div className={styles.dashboardContainer}>
-            {/* <p  onClick={() => signOut()}>home, {session && session.user.email }</p> */}
-            <div className={styles.centerContainer}>
-                    <div className={!menu ? `${styles.navigationSideBar}` : `${styles.navigationSideBarMedium}` }>
-                        <div className={styles.navigationSideBarItems}>
-                        <h1 className={styles.title1}>Board.</h1>  
-                        <div className={styles.navigationMenus}>
-                            <div>
-                                <SidebarMenuLinks/>
-                            </div> 
-                        </div>
-                        </div>
-                        
-                    </div>
-                    <div className={styles.overview}>
-                        <div className={styles.overviewInsideContainer}>
-                            <Header/>
-                            <Analytics/>
-                            <BarChart/>
-                            <div className={styles.bottomContainer}>
-                                {isClient ? <TopProduct/> : <h1>Loading...</h1>}
-                                <AddProfile/>
+            {value.isPopUpOpen && <PopUpBox/> }
+            {value.isPopUpOpen && <div onClick={handleClick} className={styles.dark}/>}
+                <div className={styles.dashboardContainer}>
+                    {/* <p  onClick={() => signOut()}>home, {session && session.user.email }</p> */}
+                    <div className={styles.centerContainer}>
+                            <div className={!menu ? `${styles.navigationSideBar}` : `${styles.navigationSideBarMedium}` }>
+                                <div className={styles.navigationSideBarItems}>
+                                <h1 className={styles.title1}>Board.</h1>  
+                                <div className={styles.navigationMenus}>
+                                    <div>
+                                        <SidebarMenuLinks/>
+                                    </div> 
+                                </div>
+                                </div>
+                                
                             </div>
-                        </div>
+                            <div className={styles.overview}>
+                                <div className={styles.overviewInsideContainer}>
+                                    <Header/>
+                                    <Analytics/>
+                                    <BarChart/>
+                                    <div className={styles.bottomContainer}>
+                                        {isClient ? <TopProduct/> : <h1>Loading...</h1>}
+                                        <AddProfile/>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
-            </div>
-        </div>
+                </div>
 
-    </div>
+            </div>
+    </section>
+   
   )
 }
 

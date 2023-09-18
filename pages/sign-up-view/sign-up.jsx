@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React, { use, useContext, useEffect, useState } from 'react'
 import styles from './sign-up.module.css'
 import Link from 'next/link'
 import { GitHub, LinkedIn, Message } from '@mui/icons-material'
@@ -6,9 +6,14 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import Image from 'next/image';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { useRouter } from 'next/router';
+import { USER_ACTION_TYPES, UserContext } from '@/context/AddNewProfile';
+import { createAction } from '@/context/CreateAnAction';
 
 const SignUp = () => {
     const router = useRouter()
+    const {value , dispatch} = useContext(UserContext)
+    const [loading ,setLoading] = useState(false)
+    const [visible , setVisible] = useState(true)
 
     const {data: session} = useSession()
 
@@ -16,11 +21,24 @@ const SignUp = () => {
         signIn()    
     }
 
-    if(session){
-        router.push("/home/dashboard") 
-    }
+    
+
+    useEffect(() =>{
+        if(session){
+            router.push("/") 
+            setLoading(true)
+            setVisible(false)
+        }
+        const payload = {
+             currentUser : session
+        }
+        dispatch(createAction(USER_ACTION_TYPES.SET_CURRENT_USER, payload))
+    }, [session])
+
   return (
-    <div className={styles.mainContainer}>
+    <section>
+        { loading &&  <div className={styles.loading}><div className={styles.ldsheart}><div></div></div> </div>}
+        {visible && <div className={styles.mainContainer}>
         <div className={styles.subContainer1}>
             <div className={styles.logoDiv}>
                 <h2 className={styles.logoTitle}>Logo</h2>
@@ -66,7 +84,9 @@ const SignUp = () => {
 
             </div>
         </div>
-    </div>
+    </div>}
+    </section>
+    
   )
 }
 

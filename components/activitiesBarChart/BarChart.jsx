@@ -20,8 +20,8 @@ const BarChart = () => {
             </div>  
         </div>
         <div className={styles.barChart}>
-            {range.sort((a, b) => b - a).map((r) =>{
-            return <p className={styles.xaxisLineAndRange}>{r}<span className={styles.xaxisLine}/></p>
+            {range.sort((a, b) => b - a).map((r, i) =>{
+            return <p key={i} className={styles.xaxisLineAndRange}>{r}<span className={styles.xaxisLine}/></p>
             })}
              <p className={styles.xaxisLineAndRange}>0<span className={styles.xaxisLine}/></p>
              <div className={styles.barDiv}>

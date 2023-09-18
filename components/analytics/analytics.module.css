@@ -2,6 +2,9 @@
     color: black;
     margin-top: 15px;
     width: 100%;
+    animation: slideIn .8s ease-in-out forwards;
+
+
 ;
 }
 
@@ -99,6 +102,28 @@
 }
 
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+      opacity: 0; 
+    }
+    50%{
+        opacity: 0; 
+    }
+    70%{
+        opacity: 0.2; 
+    }
+    95%{
+        
+        opacity: 0.9; 
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+  }
+
+
 @media (max-width: 640px) {
 
 
@@ -152,7 +177,7 @@
         width: 170.32px;
         height: 130px;
         background-color: white;
-        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.15);
+        box-shadow: 4px 4px 8px rgba(98, 98, 98, 0.05);
         border: 2px solid rgb(225, 224, 224);
         border-radius: 18px;
         margin-top: 13px;

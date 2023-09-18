@@ -13,7 +13,7 @@ const Analytics = () => {
             return ( 
                 <div key={index} className={styles.box}>
                 <div className={styles.boxDetails}>
-                    <Image style={{backgroundColor: `${data.bgColor}`}} height={30} width={30}  src={`${data.icons}`} className={styles.icon}/>
+                    <Image style={{backgroundColor: `${data.bgColor}`}} height={30} width={30}   src={`${data.icons}`} className={styles.icon}/>
                     <div className={styles.totalDetailsBox}>
                         <p className={styles.title}>{data.title}</p>
                             <div className={styles.valuesFrame}>

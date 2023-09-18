@@ -7,11 +7,13 @@ export const USER_ACTION_TYPES = {
     ADD_NEW_PROFILE: 'ADD_NEW_PROFILE',
     OPEN_POPUP_BOX:'OPEN_POPUP_BOX',
     EDIT_PROFILE:'EDIT_PROFILE',
+    SET_CURRENT_USER:'SET_CURRENT_USER',
   };
   
  const INITIAL_STATES = {
     details : null,
-    isPopUpOpen: null
+    isPopUpOpen: null,
+    currentUser: null
 
  } 
 
@@ -32,6 +34,11 @@ export const USER_ACTION_TYPES = {
             return {
                 ...state,
                 isPopUpOpen : payload.isOpen
+            }
+            case USER_ACTION_TYPES.SET_CURRENT_USER:
+            return {
+                ...state,
+                currentUser : payload.currentUser
             }
         default:
             throw console.error("erro");    

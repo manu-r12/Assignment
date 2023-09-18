@@ -74,6 +74,35 @@
     line-height: 24px;
 }
 
+.logoDiv , .nameBrand , .socialLink , .signInBox , .signindIv , .signInTitle ,.signInWithText{
+    animation: slideIn .8s ease-in-out forwards;
+
+}
+
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+      opacity: 0; 
+    }
+    50%{
+        opacity: 0; 
+    }
+    70%{
+        opacity: 0.2; 
+    }
+    95%{
+        
+        opacity: 0.9; 
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1; 
+    }
+  }
+
 .input{
     border: 1px solid #F2F2F2;
     border-radius: 8px;
@@ -199,6 +228,80 @@
 .signInBox:hover{
     background-color: rgba(215, 215, 215, 0.806);
 
+}
+
+
+
+.ldsheart {
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    height: 180px;
+    transform: rotate(45deg);
+   
+  
+  }
+  .ldsheart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(#4285F4 , #286DE0);
+  
+    animation: ldsheart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .ldsheart div:after,
+  .ldsheart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(#4285F4 , #286DE0);
+  
+  }
+  .ldsheart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .ldsheart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes ldsheart {
+    0% {
+      transform: scale(1.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(1.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.95);
+    }
+    100% {
+      transform: scale(2.0);
+    }
+  }
+  
+
+.loading{
+    position: absolute;
+   
+    border-radius: 14px;
+   
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
 }
 
 @media (max-width: 900px) {

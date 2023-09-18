@@ -12,6 +12,77 @@
    
 }
 
+.loading{
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+  
+}
+
+.ldsheart {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+  transform: rotate(45deg);
+ 
+
+}
+.ldsheart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(#4285F4 , #286DE0);
+
+  animation: ldsheart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ldsheart div:after,
+.ldsheart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(#4285F4 , #286DE0);
+
+}
+.ldsheart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.ldsheart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes ldsheart {
+  0% {
+    transform: scale(1.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(1.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.95);
+  }
+  100% {
+    transform: scale(2.0);
+  }
+}
+
+
+
 .dark{
     position: fixed;
     z-index: 1;
@@ -52,6 +123,9 @@
         padding: 30px 50px;
         display: flex;
         border-radius: 20px;
+         animation: slideIn .6s ease-in-out forwards;
+
+
 }
 
 .overview{
@@ -88,6 +162,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    animation: slideIn .8s ease-in-out forwards;
+
 }
 @media (max-width: 1170px) {
     .navigationSideBar{
@@ -105,7 +181,7 @@
             top: 0;
             left: 0;
             padding: 40px;
-             animation: slideIn .3s ease-in-out forwards;
+            animation: slideIn .3s ease-in-out forwards;
 
           
 
@@ -162,6 +238,8 @@
 
     .overview{
         padding: 4px;
+        height: 100vh;
+        margin-top: 20px;
     }
 
     .bottomContainer{

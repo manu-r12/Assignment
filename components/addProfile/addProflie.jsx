@@ -18,7 +18,7 @@ const AddProfile = () => {
             isOpen: true
         }
         dispatch(createAction(USER_ACTION_TYPES.OPEN_POPUP_BOX, payload))
-        console.log("context:",value)
+     
     }
 
   return (

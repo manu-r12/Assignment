@@ -43,3 +43,10 @@
     font-size: 14px;
 
 }
+
+
+@media (max-width: 440px) {
+    .footerLinks{
+        top: 680px;
+    }
+}
